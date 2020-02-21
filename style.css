@@ -91,3 +91,109 @@ h4 {
     width: 100%;
     height: auto;
 }
+
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sections{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 1.5%;
+    box-sizing: border-box;
+}
+
+.section{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background: #fefff9;
+    color: #363636;
+    text-decoration: none;
+    box-shadow: rgba(1,2,3,3);
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .section {
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    .section {
+        max-width: 320px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+.section span{
+    display: flex;
+}
+.section summary {
+    padding: 5% 5% 3% 5%;
+}
+.section .section-header {
+     position: relative;
+     height: 175px;
+     overflow: hidden;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-color: rgba(255,255,255,0.15);
+     background-blend-mode: overlay;
+    border-radius: 4px 4px 0 0;
+}
+
+.section .section-header:hover, .section .section-header:focus {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.section .section-title {
+    background: rgba(104,156,210,0.85);
+    padding: 3.5% 0 2.5% 0;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.section .section-title h3{
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding: 0 3.5%;
+    margin: 0;
+}
+.section .section-meta {
+    max-height: 0;
+    overflow: hidden;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 0.78em;
+    position: absolute;
+    bottom: 15%;
+    padding: 0 5%;
+    transition-property: max-height;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.section:hover, .section:focus {
+    background: white;
+    box-shadow: rgba(0,0,0,0.45) 0px 0px 20px 0px;
+}
+
+.section:hover .section-title, .section:focus .section-title {
+     background: rgba(104,156,210,0.95);
+ }
+
+.section:hover .section-meta,.section:focus .section-meta {
+  max-height: 1em;
+}
