@@ -165,12 +165,15 @@ img {
     width: 100%;
 }
 
-.section .section-title h3{
-    font-size: 1.2em;
+.section .section-title a{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1.0em;
     line-height: 1.2;
     padding: 0 3.5%;
     margin: 0;
 }
+
 .section .section-meta {
     max-height: 0;
     overflow: hidden;
@@ -196,4 +199,32 @@ img {
 
 .section:hover .section-meta,.section:focus .section-meta {
   max-height: 1em;
+}
+
+
+
+footer {
+  width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+
+}
+.graficLogo{
+    height: 10px;
+    width: 10px;
+    border-radius: 15px;
+}
+.social_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.social_icon:hover{
+    box-shadow: 0 0 0 4px rgba(255,255,255,1);
+    transition: background 0.2s, color 0.2s;
 }
